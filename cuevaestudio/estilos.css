@@ -1,0 +1,751 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+body {
+ background-color: cornsilk;
+ height: 100%;
+ width: 100%;
+
+}
+
+.contenedor {
+    text-align: center;
+}
+
+
+.fotox {
+    width: 400px;
+    height: 400px;
+}
+
+.fotox1 {
+    width: 650px;
+    height: 400px;
+    
+}
+
+.h1-index {
+    font-family: 'Raleway', sans-serif;
+    height: 50px;
+    font-weight: bold;
+    font-size: xx-large;
+    margin: 10px;
+    transition-duration: 0.5s;
+    transition-timing-function: linear
+
+}
+
+.h1-index:hover {
+    background:orange;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    margin: 0;
+}
+
+
+h1 {
+    color:tomato;
+    font-family: 'Montserrat';
+    text-align: center;
+    height: auto;
+ 
+}
+
+
+nav ul li {
+    color: orange;
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    height: 30px;
+    margin-bottom: 3px;
+    
+  }
+
+.border {
+    border-top: 2px solid gray;
+    
+}  
+
+.contacto {
+    margin-left: 30%;
+    width: 40%;
+}
+
+a {
+    color:tomato;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 20px;
+  
+}
+
+nav ul li a:hover {
+    color:black;
+    
+}
+
+li:hover {
+    background: #f1dca7;
+    border-radius: 10%;
+    
+}
+
+
+footer {
+    height: 50px;
+    background-color: burlywood;
+    color: blanchedalmond;
+    height: 100px;
+    margin-top: 3px;
+}
+
+.parrafo-footer {
+    font-size: large;
+     text-align: center;
+     color: black;
+     font-family: 'Raleway', sans-serif;
+     padding-top: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    }
+
+
+
+.imagen {
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.imagen:hover {
+    transform: scale(1.1);
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+    
+}
+
+
+
+.color-contacto {
+    background-color: cornsilk;
+}
+
+nav ul .li-contacto {
+    color:tomato;
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    height: 30px;
+    display: flex;  
+    text-align: center;
+  
+}
+
+#boton {
+    background-color: burlywood;
+    border: none;
+    color: black;
+}
+
+#boton:hover {
+    background-color: #bb9457;
+    color: white;
+    
+
+}
+
+.form-control {
+     background-color:#fef9ef;
+     border: 2px solid #ffe6a7;
+ 
+}
+.seccion {
+  
+    min-width: 300px;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-control:focus {
+    border-color: lightsalmon;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+
+.index-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.img-index {
+    height: 400px;
+    width: 550px ;    
+}
+
+.img-index:hover{
+    border: 4px solid #fec89a;
+    cursor: pointer;
+    filter: brightness(0.9) contrast(130%);     
+}
+
+
+h2 {
+font-family: 'Montserrat';
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: lightsalmon ;
+   color: lightgoldenrodyellow;
+   padding: 10px;
+   margin: 50px;
+   height: 100px;
+   width: 350px;
+}
+
+.img-peines-section {
+    height: 400px;
+    width: 550px ;
+}
+
+.img-utensillos-section{
+    height: 400px;
+    width: 400px ;
+}
+
+
+.fa-instagram{
+    color: #9d6b53;
+    font-size: 30px;
+    padding-left: 5px;
+}
+
+.fa-facebook-square{
+    color: #9d6b53;
+    font-size: 30px;
+    padding-left: 3px;
+}
+
+.fa-facebook-square:hover {
+    color: #ee6c4d;
+    
+ 
+}
+
+.fa-instagram:hover {
+    color: #ee6c4d;
+    
+}
+
+/* ------  M E D I A   Q U E R I E S -------- */ 
+
+/* ------ MEDIA QUERIES SMALL-------- */
+
+    @media only screen and (max-width: 360px){
+    
+        body {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            margin-left: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            width: 100%;      
+        }
+
+        .li-contacto {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            font-size: 15px;
+        }
+
+        .joyas-nav {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            width: 100%;
+            font-size: 20px;
+        } 
+
+        .peines-nav {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            width: 100%;
+            font-size: 20px;
+        } 
+
+        .joyas-img-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            width: 350px;
+            overflow-x: hidden;
+            margin-left: 0px;
+            margin: 10px;
+        }
+
+        
+        .form-group {
+            display: flex;
+            justify-content: flex-start;
+            flex-flow: row wrap;
+            width: auto;
+            max-width: 360px;
+        }
+
+        .form-control {
+            display: flex;
+            width: auto;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+            max-width: 360px;
+        }
+        
+        .h1-cont {
+            font-size: 25px;  
+        }
+       
+        .utensillos-nav {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            width: 360px;
+            font-size: 20px;
+            overflow-x: hidden;
+            margin: 0 ; 
+        } 
+
+        .img-utensillos-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            width: 350px;
+            overflow-x: hidden;
+            margin-left: 0px;
+            margin: 10px;
+        }
+
+        .img-peines-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            width: 350px;
+            overflow-x: hidden;
+            margin-left: 0px;
+            margin: 10px;
+        }
+
+        .banner{
+            display: flex;
+            height: 200px;
+            max-width: 360px;
+            margin: auto;
+            
+        }
+         
+        h2 {
+           margin: 10px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+           font-size: 20px;
+           height: 70px;
+           
+        }
+
+        .index-container{
+            height: auto;
+        } 
+
+        .img-index {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            width: 350px;
+            overflow-x: hidden;
+            margin-left: 0px;
+            margin: 10px;  
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 350px;
+            margin-bottom: 10px;
+            margin: auto;
+            height: 75px;  
+        }
+
+        .parrafo-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            padding-bottom: 15px;
+        }
+    }
+
+  /* ------ MEDIA QUERIES MEDIUM -------- */
+
+ 
+
+    @media (min-width: 361px) and (max-width: 720px) {
+    
+        body {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            margin-left: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            width: 100%;      
+        }
+
+        .li-contacto {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            font-size: 30px;
+           
+        }
+
+        .joyas-nav {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            width: 100%;
+            font-size: 40px;      
+        }
+
+        .utensillos-nav {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            width: 100%;
+            font-size: 50px;
+        } 
+
+        .peines-nav {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            width: 100%;
+            font-size: 40px;      
+        } 
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 720px ;
+            height: 200px;
+        } 
+
+        .form-group {
+            display: flex;
+            justify-content: flex-start;
+            flex-flow: column wrap;
+            width: auto;
+            max-width: 720px;
+        }
+
+        .form-control {
+            display: flex;
+            width: auto;
+            flex-flow: column wrap;
+            justify-content: center;
+            max-width: 720px;
+        }
+        
+        .h1-cont {
+            font-size: 40px;  
+        }
+
+        .banner{
+            display: flex;
+            height: 300px;
+            width: 720px;
+            margin-top: 10px;
+            
+        }
+
+        .h1-index {
+            font-size: 50px;
+            display: flex;
+            flex-wrap: row wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 720px;
+        }
+         
+        .joyas-h1 {
+            font-size: 30px;
+            display: flex;
+            flex-wrap: row wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 720px;
+        }
+
+               
+        .utensillos-h1 {
+            font-size: 30px;
+            display: flex;
+            flex-wrap: row wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 720px;
+        }
+
+        h2 {
+           margin: 10px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+           font-size: 30px;
+           height: 80px;
+           width: 720px;
+           
+        }
+
+        .index-container{
+            height: auto;
+        } 
+
+        .img-index {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 350px;
+            width: 100%;
+            overflow-x: hidden;
+            margin-left: 0px;
+            margin: 10px;  
+        }
+
+        .joyas-img-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 350px;
+            width: 100%;
+            overflow-x: hidden;
+            margin-left: 0px;
+            margin: 10px;
+        }
+
+        .img-utensillos-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 350px;
+            width: 100%;
+            overflow-x: hidden;
+            margin-left: 0px;
+            margin: 10px;
+        }
+
+        
+        .img-peines-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 350px;
+            width: 100%;
+            overflow-x: hidden;
+            margin-left: 0px;
+            margin: 10px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 720px;
+            margin-bottom: 10px;
+            margin: auto;
+            height: 90px;
+        
+        }
+
+        .parrafo-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            padding: 5px;
+            
+        }
+    }
+
+
+      /* ------ MEDIA QUERIES LARGE -------- */
+
+    @media (min-width: 721px) and (max-width: 1000px)  {
+    
+        body {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            margin-left: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            width: 100%; 
+            justify-content: center;    
+        }
+
+        .li-contacto .joyas-nav {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            font-size: 22px;
+            justify-content: center;
+           
+        }
+
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1000px ;
+            height: 150px;
+        } 
+
+        .banner{
+            display: flex;
+            height: 400px;
+            max-width: 1000px;
+            margin-top: 10px;
+            
+        }
+
+        .h1-index {
+            font-size: 35px;
+            display: flex;
+            flex-wrap: row wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            min-width: 721px;
+            max-width: 1000px;
+        }
+         
+        h2 {
+           margin: 10px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-flow: row wrap;
+           font-size: 25px;
+           height: 80px;
+           min-width: 721px;
+           max-width: 1000px;
+        }
+
+        .index-container{
+            height: auto;
+        } 
+
+        .img-index {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row wrap;
+            height: 400px;
+            min-width: 721px;
+            max-width: 1000px;
+            overflow-x: hidden;
+            margin-left: 0px;
+            margin: 10px;  
+        }
+
+        .joyas-img-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row wrap;
+            height: 550px;
+            min-width: 999px;
+            overflow-x: hidden;
+            margin: 10px;  
+        }
+
+        
+        .img-peines-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row wrap;
+            height: 550px;
+            min-width: 999px;
+            overflow-x: hidden;
+            margin: 10px;  
+        }
+
+
+        footer {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 1000px;
+            margin-bottom: 10px;
+            margin: auto;
+            height: 100px;
+        
+        }
+
+        .parrafo-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            padding: 10px;
+            
+        }
+    }
+
